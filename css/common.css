@@ -1,0 +1,390 @@
+/*公共样式*/
+.fl {
+	float: left;
+}
+
+.fr {
+	float: right;
+}
+
+/* 声明字体图标 */
+@font-face {
+	/*1. 这个字体名称要注意 icomoon, 可修改名字*/
+	font-family: 'icomoon';
+	/*2. 一定要注意路径的问题*/
+	src: url('../fonts/icomoon.eot?7kkyc2');
+	src: url('../fonts/icomoon.eot?7kkyc2#iefix') format('embedded-opentype'),
+		url('../fonts/icomoon.ttf?7kkyc2') format('truetype'),
+		url('../fonts/icomoon.woff?7kkyc2') format('woff'),
+		url('../fonts/icomoon.svg?7kkyc2#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* 版心 */
+.w {
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.style-red {
+	color: #c81623;
+}
+
+.spacer {
+	width: 1px;
+	height: 12px;
+	background-color: #666;
+	margin: 10px 12px 0;
+}
+
+/*顶部快捷导航*/
+.shortcut {
+	height: 31px;
+	background-color: #f1f1f1;
+	/* 因为子元素基本都要文字垂直居中，利用继承性，只给父元素设置，避免每个子元素都写 */
+	line-height: 31px;
+}
+
+/* 里面li全部要浮动 */
+.shortcut li {
+	float: left;
+}
+
+/* 调用字体图标 */
+.fr i {
+	/* 或.fr .icomoon { */
+	font-family: 'icomoon';
+	font-size: 16px;
+	line-height: 26px;
+}
+
+/* 头部header */
+.header {
+	position: relative;
+	height: 105px;
+}
+
+.logo {
+	position: absolute;
+	top: 25px;
+	left: 0;
+	width: 175px;
+	height: 56px;
+}
+
+.logo a {
+	display: block;
+	/* overflow: hidden; */
+	width: 175px;
+	height: 56px;
+	/* width: 100%;
+	height: 100%; */
+	background-image: url(../img/logo.png);
+	/* text-indent: -999px; */
+	font-size: 0;
+}
+
+.search {
+	position: absolute;
+	top: 25px;
+	left: 348px;
+}
+
+.text {
+	/* 添加浮动去除和button之间的空隙 */
+	float: left;
+	width: 445px;
+	height: 32px;
+	padding-left: 10px;
+	border: 2px solid #b1191a;
+	border-right: 0;
+	color: #ccc;
+}
+
+.btn {
+	/* 添加浮动去除和input之间的空隙 */
+	float: left;
+	width: 82px;
+	height: 36px;
+	background-color: #b1191a;
+	font-size: 16px;
+	color: #fff;
+}
+
+.hotwords {
+	position: absolute;
+	top: 65px;
+	left: 348px;
+}
+
+.hotwords a {
+	/* 行内元素只可以设置水平方向的边距。
+	如：margin-left,margin-right,padding-left,padding-right. */
+	margin: 0 10px;
+}
+
+.shopcar {
+	position: absolute;
+	top: 25px;
+	right: 64px;
+	width: 138px;
+	height: 34px;
+	background-color: #f7f7f7;
+	border: 1px solid #dfdfdf;
+	line-height: 34px;
+	text-align: center;
+}
+
+.car {
+	font-family: 'icomoon';
+	color: #da5555;
+}
+
+.arrow {
+	font-family: 'icomoon';
+	margin-left: 5px;
+}
+
+.count {
+	position: absolute;
+	top: -5px;
+	/* 应该是左侧对齐，用left 文字才能往右走显示 */
+	/* right: 25px; */
+	left: 100px;
+	height: 14px;
+	padding: 0 3px;
+	background-color: #e60012;
+	/* 设置行高，避免继承父级的行高而发生问题 */
+	line-height: 14px;
+	color: #fff;
+	/*border-radius: 左上角 右上角 右下角 左下角;*/
+	border-radius: 7px 7px 7px 0;
+}
+
+/* 导航栏nav */
+.nav {
+	height: 45px;
+	border-bottom: 2px solid #b1191a;
+}
+
+.dropdown {
+	width: 209px;
+	height: 45px;
+}
+
+.dropdown .dt {
+	height: 100%;
+	background-color: #b1191a;
+	font-size: 16px;
+	color: #fff;
+	text-align: center;
+	line-height: 45px;
+}
+
+.dropdown .dd {
+	height: 465px;
+	/* 顶部给2px的外边距，不然会覆盖上面的下边框 */
+	margin-top: 2px;
+	background-color: #c81623;
+}
+
+/* 1.官方视频修改方案 */
+.menu_item {
+	height: 31px;
+	line-height: 31px;
+	margin-left: 1px;
+	padding: 0 10px;
+	color: #fff;
+	/* 过度动画 */
+	transition: padding-left 0.5s;
+}
+
+.menu_item:hover {
+	padding-left: 20px;
+}
+
+.menu_item a {
+	font-size: 14px;
+	color: #fff;
+}
+
+.menu_item i {
+	/* 浮动顶不过padding */
+	float: right;
+	font-family: 'icomoon';
+	font-size: 18px;
+	color: #fff;
+}
+
+/* hover之后可以用js来实现！ */
+.menu_item:hover {
+	background-color: #fff;
+	color: #c81623;
+}
+
+/* 鼠标经过 li 时，里面的 a 变颜色 */
+.menu_item:hover a {
+	color: #c81623;
+}
+
+/* 鼠标经过 li 时，里面的 字体图标i 消失 */
+.menu_item:hover i {
+	color: #fff;
+}
+
+/* 2.优化方案 */
+/* .dd li {
+	height: 31px;
+	margin-left: 1px;
+	padding: 0 10px;
+	color: #fff;
+	line-height: 31px;
+}
+.dd li a {
+	font-size: 14px; */
+/* 此处不能继承 li 的color */
+/* color: #fff;
+}
+.dd li i {
+	float: right;
+	font-family: 'icomoon';
+	font-size: 18px;
+	color: #fff;
+}
+.dd li:hover {
+	background-color: #fff;
+	color: #c81623;
+} */
+/* 鼠标经过 li 时，里面的 a 变颜色 */
+/* .dd li:hover a {
+	color: #c81623;
+} */
+/* 鼠标经过 li 时，里面的 字体图标i 消失 */
+/* .dd li:hover i {
+	color: #fff;
+} */
+
+.navitems {
+	margin-left: 10px;
+}
+
+.navitems li {
+	float: left;
+}
+
+.navitems li a {
+	display: block;
+	height: 45px;
+	padding: 0 25px;
+	line-height: 45px;
+	font-size: 16px;
+}
+
+/* 底部footer */
+.footer {
+	height: 386px;
+	margin-top: 10px;
+	padding-top: 30px;
+	background-color: #f5f5f5;
+}
+
+.mod_service {
+	height: 79px;
+	border-bottom: 1px solid #ccc;
+}
+
+.mod_service li {
+	float: left;
+	width: 240px;
+	height: 79px;
+}
+
+/* 写一个图标通用样式减少重复代码 */
+.mod-service-icon {
+	/*浮动的盒子 可以直接给大小的 不需要转换*/
+	float: left;
+	width: 50px;
+	height: 50px;
+	margin-left: 35px;
+	/* 此处复习精灵图技术 */
+	background: url(../img/icons.png) no-repeat;
+}
+
+.mod_service_tit {
+	float: left;
+	margin-left: 6px;
+}
+
+.mod_service_tit h5 {
+	/* 标题默认上下有一点空白距离 */
+	margin: 5px 0;
+}
+
+/* 改变各自精灵图的位置 */
+.mod_service_zheng {
+	background-position: -252px -2px;
+}
+
+.mod_service_kuai {
+	background-position: -255px -54px;
+}
+
+.mod_service_bao {
+	background-position: -256px -106px;
+}
+
+.mod_service_fu {
+	background-position: -256px -158px;
+}
+
+.mod_service_bang {
+	background-position: -256px -213px;
+}
+
+.mod_help {
+	height: 186px;
+	padding-top: 20px;
+	border-bottom: 1px solid #ccc;
+}
+
+.mod_help_item {
+	float: left;
+	width: 150px;
+	padding-left: 50px;
+}
+
+.mod_help_item dt {
+	height: 30px;
+	font-size: 16px;
+}
+
+.mod_help_item dd {
+	height: 22px;
+}
+
+.mod_help_app img {
+	margin: 7px 0;
+}
+
+/* 实现类似居中的效果 */
+.mod_help_app dt {
+	padding-left: 14px;
+}
+
+.mod_help_app p {
+	padding-left: 10px;
+}
+
+.mod_copyright {
+	text-align: center;
+}
+
+.mod_copyright_links {
+	margin: 20px 0 15px 0;
+}
+
+.mod_copyright_info {
+	/* 基本变化不大 */
+	line-height: 20px;
+}

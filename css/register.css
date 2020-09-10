@@ -1,0 +1,164 @@
+.w {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    height: 82px;
+    border-bottom: 2px solid #b1191a;
+}
+
+.logo {
+    padding-top: 15px;
+}
+
+.registerarea {
+    height: 520px;
+    margin-top: 20px;
+    border: 1px solid #ccc;
+}
+
+.registerarea h3 {
+    height: 40px;
+    padding: 0 15px;
+    background-color: #ececec;
+    border-bottom: 1px solid #ccc;
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 40px;
+}
+
+.registerarea h3 em {
+    float: right;
+    font-size: 14px;
+}
+
+.registerarea h3 a {
+    color: #c81623;
+}
+
+.footer {
+    height: 120px;
+    text-align: center;
+}
+
+.mod_copyright_links {
+    margin: 20px 0 10px 0;
+}
+
+.mod_copyright_info {
+    /* 基本变化不大 */
+    /* line-height: 18px; */
+}
+
+.reg-form {
+    width: 600px;
+    height: 400px;
+    margin: 45px auto 0;
+}
+
+.reg-form li {
+    margin-bottom: 15px;
+}
+
+/* label也是行内元素 */
+.reg-form label {
+    display: inline-block;
+    width: 100px;
+    height: 36px;
+    font-size: 14px;
+    line-height: 36px;
+    text-align: right;
+}
+
+.inp {
+    width: 228px;
+    height: 34px;
+    padding-left: 10px;
+    margin-left: 10px;
+    border: 1px solid #ccc;
+}
+
+.error {
+    color: #df3033;
+    margin-left: 10px;
+}
+
+.error_icon,
+.success_icon {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url(../img/error.png) no-repeat;
+    vertical-align: middle;
+    margin-top: ;
+    margin: -2px 2px 0 0;
+}
+
+.success {
+    color: #40b83f;
+    margin-left: 10px;
+}
+
+.success_icon {
+    background: url(../img/success.png) no-repeat;
+}
+
+.safe {
+    padding-left: 115px;
+    color: #b2b2b2;
+    font-size: 14px;
+}
+
+.safe em {
+    padding: 0 14px;
+    color: #fff;
+}
+
+.ruo {
+    background-color: #de1111;
+}
+
+.zhong {
+    background-color: #f79100;
+}
+
+.qiang {
+    background-color: #40b83f;
+}
+
+.agree {
+    padding: 20px 0 0 115px;
+    font-size: 13px;
+}
+
+.agree input {
+	vertical-align: middle;
+	margin: -1px 6px 0 0;
+}
+
+.agree  a {
+	color: #1ba1e6;
+}
+
+.submit_btn {
+    width: 200px;
+	height: 34px;
+	background-color: #c81623;
+	margin: 30px 0 0 130px;
+	border: none;
+	color: #fff;
+	font-size: 15px;
+}
+
+.footer {
+	height: 120px;
+	text-align: center;
+}
+.mod_copyright_links {
+	margin-top: 20px;
+	height: 30px;
+}
+.mod_copyright_info {
+	line-height: 20px;
+}
